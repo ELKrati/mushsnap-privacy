@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>MushSnap – Privacy Policy</title>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg: #f5f2ec;
+      --card: #ffffff;
+      --green: #3a7d44;
+      --green-light: #eef5ef;
+      --text: #1a1a1a;
+      --muted: #6b6b6b;
+      --border: #e5e0d8;
+    }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'DM Sans', sans-serif;
+      font-weight: 300;
+      line-height: 1.7;
+      min-height: 100vh;
+    }
+
+    /* hero */
+    header {
+      background: var(--green);
+      padding: 60px 24px 48px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    header::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(ellipse at 60% 0%, #4e9e5a33 0%, transparent 70%);
+    }
+    .logo {
+      font-size: 2.6rem;
+      margin-bottom: 8px;
+    }
+    header h1 {
+      font-family: 'Lora', serif;
+      font-size: 2rem;
+      font-weight: 600;
+      color: #fff;
+      letter-spacing: -0.02em;
+    }
+    header p {
+      color: rgba(255,255,255,0.72);
+      font-size: 0.9rem;
+      margin-top: 6px;
+    }
+    .badge {
+      display: inline-block;
+      margin-top: 16px;
+      background: rgba(255,255,255,0.15);
+      color: rgba(255,255,255,0.9);
+      font-size: 0.75rem;
+      font-weight: 500;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      padding: 4px 14px;
+      border-radius: 20px;
+      border: 1px solid rgba(255,255,255,0.2);
+    }
+
+    /* layout */
+    main {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 48px 24px 80px;
+    }
+
+    /* toc */
+    .toc {
+      background: var(--green-light);
+      border: 1px solid #c8deca;
+      border-radius: 14px;
+      padding: 24px 28px;
+      margin-bottom: 40px;
+    }
+    .toc h2 {
+      font-family: 'Lora', serif;
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: var(--green);
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      margin-bottom: 14px;
+    }
+    .toc ol {
+      padding-left: 20px;
+    }
+    .toc li {
+      font-size: 0.88rem;
+      color: var(--green);
+      margin-bottom: 4px;
+    }
+    .toc a {
+      color: var(--green);
+      text-decoration: none;
+      font-weight: 400;
+    }
+    .toc a:hover { text-decoration: underline; }
+
+    /* sections */
+    section {
+      background: var(--card);
+      border-radius: 16px;
+      padding: 32px;
+      margin-bottom: 20px;
+      border: 1px solid var(--border);
+    }
+    section h2 {
+      font-family: 'Lora', serif;
+      font-size: 1.2rem;
+      font-weight: 600;
+      color: var(--text);
+      margin-bottom: 16px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    section h2 .icon {
+      width: 32px;
+      height: 32px;
+      background: var(--green-light);
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1rem;
+      flex-shrink: 0;
+    }
+    section p {
+      font-size: 0.92rem;
+      color: #3a3a3a;
+      margin-bottom: 12px;
+    }
+    section p:last-child { margin-bottom: 0; }
+    section ul {
+      padding-left: 20px;
+      margin-bottom: 12px;
+    }
+    section li {
+      font-size: 0.92rem;
+      color: #3a3a3a;
+      margin-bottom: 6px;
+    }
+    strong { font-weight: 500; color: var(--text); }
+
+    /* highlight box */
+    .highlight {
+      background: var(--green-light);
+      border-left: 3px solid var(--green);
+      border-radius: 0 10px 10px 0;
+      padding: 14px 18px;
+      margin: 16px 0;
+      font-size: 0.88rem;
+      color: #2a5c32;
+    }
+
+    /* contact card */
+    .contact-card {
+      background: var(--green);
+      border-radius: 16px;
+      padding: 32px;
+      text-align: center;
+      color: #fff;
+      margin-top: 32px;
+    }
+    .contact-card h3 {
+      font-family: 'Lora', serif;
+      font-size: 1.2rem;
+      margin-bottom: 8px;
+    }
+    .contact-card p {
+      font-size: 0.88rem;
+      color: rgba(255,255,255,0.75);
+      margin-bottom: 20px;
+    }
+    .contact-card a {
+      display: inline-block;
+      background: rgba(255,255,255,0.15);
+      border: 1px solid rgba(255,255,255,0.3);
+      color: #fff;
+      text-decoration: none;
+      padding: 10px 28px;
+      border-radius: 40px;
+      font-size: 0.88rem;
+      font-weight: 500;
+      transition: background 0.2s;
+    }
+    .contact-card a:hover { background: rgba(255,255,255,0.25); }
+
+    footer {
+      text-align: center;
+      padding: 24px;
+      font-size: 0.78rem;
+      color: var(--muted);
+    }
+    footer span { color: var(--green); }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="logo">🍄</div>
+  <h1>Privacy Policy</h1>
+  <p>MushSnap — AI Mushroom Identifier</p>
+  <span class="badge">Last updated: March 2026</span>
+</header>
+
+<main>
+
+  <div class="toc">
+    <h2>Contents</h2>
+    <ol>
+      <li><a href="#information">Information We Collect</a></li>
+      <li><a href="#use">How We Use Your Information</a></li>
+      <li><a href="#third-party">Third-Party Services</a></li>
+      <li><a href="#storage">Data Storage & Security</a></li>
+      <li><a href="#children">Children's Privacy</a></li>
+      <li><a href="#rights">Your Rights</a></li>
+      <li><a href="#disclaimer">Safety Disclaimer</a></li>
+      <li><a href="#changes">Changes to This Policy</a></li>
+      <li><a href="#contact">Contact Us</a></li>
+    </ol>
+  </div>
+
+  <section id="information">
+    <h2><span class="icon">📋</span> Information We Collect</h2>
+    <p>MushSnap is designed with privacy in mind. We collect minimal data necessary to provide the service.</p>
+    <ul>
+      <li><strong>Photos:</strong> Images you submit for mushroom identification. These are sent to our AI provider for processing and are not stored on our servers permanently.</li>
+      <li><strong>Scan history:</strong> Identification results stored locally on your device via AsyncStorage. We do not have access to this data.</li>
+      <li><strong>Purchase information:</strong> Managed entirely by Apple App Store or Google Play. We do not store your payment details.</li>
+      <li><strong>Anonymous usage data:</strong> Basic app usage metrics via RevenueCat to manage subscriptions.</li>
+    </ul>
+    <div class="highlight">
+      We do not collect your name, email address, location, or any personally identifiable information unless you contact us directly.
+    </div>
+  </section>
+
+  <section id="use">
+    <h2><span class="icon">⚙️</span> How We Use Your Information</h2>
+    <p>Information collected is used solely to:</p>
+    <ul>
+      <li>Provide mushroom identification results via AI analysis</li>
+      <li>Manage your subscription status and scan limits</li>
+      <li>Improve the accuracy of identification over time</li>
+      <li>Respond to support requests if you contact us</li>
+    </ul>
+    <p>We do not sell, rent, or share your data with third parties for marketing purposes.</p>
+  </section>
+
+  <section id="third-party">
+    <h2><span class="icon">🔗</span> Third-Party Services</h2>
+    <p>MushSnap uses the following third-party services:</p>
+    <ul>
+      <li><strong>OpenAI (GPT-4o mini):</strong> Images are sent to OpenAI's API for visual analysis. OpenAI's privacy policy applies to this processing. Images are not used to train their models by default.</li>
+      <li><strong>RevenueCat:</strong> Handles subscription management and in-app purchase verification. Subject to RevenueCat's privacy policy.</li>
+      <li><strong>Apple App Store / Google Play:</strong> Handle all payment processing. We never see your payment details.</li>
+    </ul>
+  </section>
+
+  <section id="storage">
+    <h2><span class="icon">🔒</span> Data Storage & Security</h2>
+    <p>Your scan history is stored locally on your device and is not transmitted to our servers. Photos submitted for identification are processed in real-time and not stored permanently.</p>
+    <p>We implement reasonable technical measures to protect any data we do process. However, no method of transmission over the internet is 100% secure.</p>
+  </section>
+
+  <section id="children">
+    <h2><span class="icon">👶</span> Children's Privacy</h2>
+    <p>MushSnap is not directed to children under the age of 13. We do not knowingly collect personal information from children. If you believe a child has provided us with personal information, please contact us so we can delete it.</p>
+  </section>
+
+  <section id="rights">
+    <h2><span class="icon">⚖️</span> Your Rights</h2>
+    <p>Depending on your location, you may have the right to:</p>
+    <ul>
+      <li>Access the personal data we hold about you</li>
+      <li>Request deletion of your data</li>
+      <li>Opt out of any data processing</li>
+      <li>Lodge a complaint with your local data protection authority</li>
+    </ul>
+    <p>Since most data is stored locally on your device, you can delete it at any time by uninstalling the app or clearing app data in your device settings.</p>
+  </section>
+
+  <section id="disclaimer">
+    <h2><span class="icon">⚠️</span> Safety Disclaimer</h2>
+    <div class="highlight">
+      MushSnap is an AI-powered tool for educational purposes only. Never consume any wild mushroom based solely on this app's identification. Always confirm with a qualified mycologist or expert before consuming any mushroom found in the wild. Misidentification can be fatal.
+    </div>
+    <p>We are not liable for any harm resulting from the use or misuse of mushroom identification information provided by this app.</p>
+  </section>
+
+  <section id="changes">
+    <h2><span class="icon">🔄</span> Changes to This Policy</h2>
+    <p>We may update this Privacy Policy from time to time. We will notify you of significant changes by updating the date at the top of this page. Continued use of the app after changes constitutes acceptance of the updated policy.</p>
+  </section>
+
+  <div class="contact-card" id="contact">
+    <h3>Questions about privacy?</h3>
+    <p>We're happy to answer any questions about how MushSnap handles your data.</p>
+    <a href="mailto:privacy@mushsnap.app">privacy@mushsnap.app</a>
+  </div>
+
+</main>
+
+<footer>
+  © 2026 MushSnap. Made with 🍄 · <span>Privacy first</span>
+</footer>
+
+</body>
+</html>
